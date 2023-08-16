@@ -16,7 +16,7 @@ int findMax(int arr[], int size)
   while (flag == 1)
     {
       size = 0;}
-      scanf("%d",arr[size]);
+      scanf("%d",*arr[size]);
   
     }
 }
