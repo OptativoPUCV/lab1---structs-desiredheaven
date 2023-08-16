@@ -15,11 +15,11 @@ int findMax(int arr[], int size)
   flag = 1;
   while (flag == 1)
     {
-      size = 0;}
+      size = 0;
       scanf("%d",arr[size]);
   
     }
-}
+
 } {return 0; }
 
 /*
