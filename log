@@ -133,3 +133,22 @@ exercises.c:23:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 5dde1eb
+Wed 16 Aug 2023 08:37:15 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:19:15: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Werror=format=]
+   19 |       scanf("%d",arr[size]);
+      |              ~^  ~~~~~~~~~
+      |               |     |
+      |               int * int
+exercises.c:19:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   19 |       scanf("%d",arr[size]);
+      |       ^~~~~~~~~~~~~~~~~~~~~
+exercises.c:23:1: error: control reaches end of non-void function [-Werror=return-type]
+   23 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+3897453
