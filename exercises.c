@@ -111,11 +111,12 @@ int checkSorted(int arr[], int size) {
       if (arr[i]>arr[i+1])
       {
         return -1;
+      }
       else
       {
         return 0;
       }
-      }
+      
     }
   
   
