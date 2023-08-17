@@ -618,3 +618,26 @@ Thu 17 Aug 2023 08:34:22 PM UTC:
  tests:  0|5
 total_score: 20/70
 4cb0f83
+Thu 17 Aug 2023 08:40:58 PM UTC: 
+ exercises.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:55:3: error: expected ‘,’ or ‘;’ before ‘for’
+   55 |   for (int i = 0; i < size; i++)
+      |   ^~~
+exercises.c:55:19: error: ‘i’ undeclared (first use in this function)
+   55 |   for (int i = 0; i < size; i++)
+      |                   ^
+exercises.c:55:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:55:32: error: expected ‘;’ before ‘)’ token
+   55 |   for (int i = 0; i < size; i++)
+      |                                ^
+      |                                ;
+exercises.c:55:32: error: expected statement before ‘)’ token
+exercises.c:53:7: error: variable ‘newArr’ set but not used [-Werror=unused-but-set-variable]
+   53 | { int newArr[*newSize];
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+953a35f
