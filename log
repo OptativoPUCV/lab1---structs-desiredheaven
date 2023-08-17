@@ -840,3 +840,30 @@ Thu 17 Aug 2023 11:44:35 PM UTC:
  tests:  0|4
 total_score: 30/70
 2d6713a
+Thu 17 Aug 2023 11:50:24 PM UTC: 
+ exercises.c | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:107:18: error: ‘array’ undeclared (first use in this function); did you mean ‘arr’?
+  107 |       if (arr[i]<array[i+1])
+      |                  ^~~~~
+      |                  arr
+exercises.c:107:18: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:114:7: error: expected ‘}’ before ‘else’
+  114 |       else
+      |       ^~~~
+exercises.c: At top level:
+exercises.c:128:3: error: expected identifier or ‘(’ before ‘return’
+  128 |   return -2; }
+      |   ^~~~~~
+exercises.c:128:14: error: expected identifier or ‘(’ before ‘}’ token
+  128 |   return -2; }
+      |              ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:119:5: error: control reaches end of non-void function [-Werror=return-type]
+  119 |     }
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+be1dea6
