@@ -787,3 +787,20 @@ Thu 17 Aug 2023 09:00:52 PM UTC:
  tests:  0|4
 total_score: 30/70
 e183fcf
+Thu 17 Aug 2023 11:42:45 PM UTC: 
+ exercises.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:92:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   92 |   return result;
+      |          ^~~~~~
+exercises.c:75:6: note: declared here
+   75 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c:78:14: error: unused variable ‘cont’ [-Werror=unused-variable]
+   78 |   int size3, cont;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bb02db2
