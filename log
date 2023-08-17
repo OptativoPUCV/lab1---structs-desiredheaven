@@ -274,3 +274,18 @@ test.c:125:5: error: implicit declaration of function ‘reverseArray’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 42c6edd
+Thu 17 Aug 2023 08:24:47 PM UTC: 
+ exercises.c | 24 +++++++++++-------------
+ 1 file changed, 11 insertions(+), 13 deletions(-)
+In file included from test.c:1:
+exercises.c:27:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before numeric constant
+   27 | Ejercicio 2: Invertir un Arreglo
+      |           ^
+test.c: In function ‘test_reverseArray’:
+test.c:125:5: error: implicit declaration of function ‘reverseArray’; did you mean ‘test_reverseArray’? [-Werror=implicit-function-declaration]
+  125 |     reverseArray(arr, size);
+      |     ^~~~~~~~~~~~
+      |     test_reverseArray
+cc1: all warnings being treated as errors
+Compilation failed
+a608342
