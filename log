@@ -517,3 +517,25 @@ exercises.c:39:17: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 529823a
+Thu 17 Aug 2023 08:25:57 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:37:28: error: expected ‘;’ before ‘)’ token
+   37 |       for (int j = 0; j-i-1)
+      |                            ^
+      |                            ;
+exercises.c:39:14: error: expected ‘(’ before ‘arr’
+   39 |           if arr[j] < arr[j]
+      |              ^~~
+      |              (
+exercises.c:39:17: error: statement with no effect [-Werror=unused-value]
+   39 |           if arr[j] < arr[j]
+      |              ~~~^~~
+exercises.c:33:7: error: unused variable ‘temp’ [-Werror=unused-variable]
+   33 |   int temp;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b44c5f4
