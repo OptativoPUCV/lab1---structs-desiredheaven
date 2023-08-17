@@ -591,3 +591,18 @@ Thu 17 Aug 2023 08:30:44 PM UTC:
  tests:  0|6
 total_score: 10/70
 a13c636
+Thu 17 Aug 2023 08:33:28 PM UTC: 
+ exercises.c | 16 +++++++---------
+ 1 file changed, 7 insertions(+), 9 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:39:7: error: ‘aux’ undeclared (first use in this function)
+   39 |       aux = arr[j];
+      |       ^~~
+exercises.c:39:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:33:7: error: unused variable ‘temp’ [-Werror=unused-variable]
+   33 |   int temp;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9208529
