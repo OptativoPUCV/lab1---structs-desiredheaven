@@ -495,3 +495,25 @@ test.c:411: error: expected ‘{’ at end of input
 cc1: all warnings being treated as errors
 Compilation failed
 e00d33b
+Thu 17 Aug 2023 08:25:44 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:35:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘for’
+   35 |   for (int i = 0; i < size; i++)
+      |   ^~~
+exercises.c:37:28: error: expected ‘;’ before ‘)’ token
+   37 |       for (int j = 0; j-i-1)
+      |                            ^
+      |                            ;
+exercises.c:39:14: error: expected ‘(’ before ‘arr’
+   39 |           if arr[j] < arr[j]
+      |              ^~~
+      |              (
+exercises.c:39:17: error: statement with no effect [-Werror=unused-value]
+   39 |           if arr[j] < arr[j]
+      |              ~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+529823a
