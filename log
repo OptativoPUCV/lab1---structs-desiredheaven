@@ -240,3 +240,37 @@ Thu 17 Aug 2023 08:06:28 PM UTC:
  tests:  0|6
 total_score: 10/70
 6a4f017
+Thu 17 Aug 2023 08:19:34 PM UTC: 
+ exercises.c | 22 +++++++++++++++++++---
+ 1 file changed, 19 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c:27:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before numeric constant
+   27 | Ejercicio 2: Invertir un Arreglo
+      |           ^
+exercises.c:33:5: error: unknown type name ‘bool’
+   33 |     bool swapped;
+      |     ^~~~
+exercises.c:6:1: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    5 | #include <string.h>
+  +++ |+#include <stdbool.h>
+    6 | 
+exercises.c:34:5: error: expected identifier or ‘(’ before ‘for’
+   34 |     for (i = 0; i < size - 1; i++) {
+      |     ^~~
+exercises.c:34:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   34 |     for (i = 0; i < size - 1; i++) {
+      |                   ^
+exercises.c:34:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   34 |     for (i = 0; i < size - 1; i++) {
+      |                                ^~
+exercises.c:48:1: error: expected identifier or ‘(’ before ‘}’ token
+   48 | }
+      | ^
+test.c: In function ‘test_reverseArray’:
+test.c:125:5: error: implicit declaration of function ‘reverseArray’; did you mean ‘test_reverseArray’? [-Werror=implicit-function-declaration]
+  125 |     reverseArray(arr, size);
+      |     ^~~~~~~~~~~~
+      |     test_reverseArray
+cc1: all warnings being treated as errors
+Compilation failed
+42c6edd
