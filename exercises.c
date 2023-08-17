@@ -56,11 +56,11 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     {
       if (arr[i]%2 == 0)
       {
-        *newArr[cont] = arr[i];
+        newArr[cont] = arr[i];
         
       }
     }
-  return *newArr; }
+  return newArr; }
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
