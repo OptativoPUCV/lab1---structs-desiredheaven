@@ -539,3 +539,23 @@ exercises.c:33:7: error: unused variable ‘temp’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 b44c5f4
+Thu 17 Aug 2023 08:26:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:37:28: error: expected ‘;’ before ‘)’ token
+   37 |       for (int j = 0; j-i-1)
+      |                            ^
+      |                            ;
+exercises.c:39:22: error: self-comparison always evaluates to false [-Werror=tautological-compare]
+   39 |           if (arr[j] < arr[j])
+      |                      ^
+exercises.c:43:13: error: ‘array’ undeclared (first use in this function); did you mean ‘arr’?
+   43 |             array[j+1] = temp;
+      |             ^~~~~
+      |             arr
+exercises.c:43:13: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+0bbbd74
