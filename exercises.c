@@ -86,7 +86,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
           arr3[i] = arr1[j];
           
         }
-      
+      printf("%d ", arr3[i])
     }
   result[size3] = arr3[size3];
   

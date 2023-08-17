@@ -821,3 +821,16 @@ Thu 17 Aug 2023 11:43:09 PM UTC:
  tests:  0|4
 total_score: 30/70
 3779630
+Thu 17 Aug 2023 11:44:27 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:89:29: error: expected ‘;’ before ‘}’ token
+   89 |       printf("%d ", arr3[i])
+      |                             ^
+      |                             ;
+   90 |     }
+      |     ~                        
+Compilation failed
+871fcc9
