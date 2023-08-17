@@ -804,3 +804,14 @@ exercises.c:78:14: error: unused variable ‘cont’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 bb02db2
+Thu 17 Aug 2023 11:42:57 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:78:14: error: unused variable ‘cont’ [-Werror=unused-variable]
+   78 |   int size3, cont;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+96e6aa5
