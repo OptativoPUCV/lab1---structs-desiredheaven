@@ -728,3 +728,13 @@ exercises.c:64:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 403c4eb
+Thu 17 Aug 2023 08:48:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:9: error: assignment to expression with array type
+   54 |  newArr = (int*)malloc(sizeof(int));
+      |         ^
+Compilation failed
+e7e7e6c
