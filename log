@@ -1103,3 +1103,20 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 4db094c
+Fri 18 Aug 2023 10:58:45 PM UTC: 
+ exercises.c | 14 --------------
+ 1 file changed, 14 deletions(-)
+In file included from test.c:1:
+exercises.c:117:3: error: expected identifier or ‘(’ before ‘return’
+  117 |   return -2; }
+      |   ^~~~~~
+exercises.c:117:14: error: expected identifier or ‘(’ before ‘}’ token
+  117 |   return -2; }
+      |              ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:105:5: error: control reaches end of non-void function [-Werror=return-type]
+  105 |     }
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+226da3d
