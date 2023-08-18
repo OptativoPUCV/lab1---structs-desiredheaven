@@ -116,7 +116,7 @@ int checkSorted(int arr[], int size){
       }
 
       flag = flag
-      
+    } 
   
        
 
