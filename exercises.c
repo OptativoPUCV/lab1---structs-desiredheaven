@@ -116,7 +116,7 @@ int checkSorted(int arr[], int size){
   
   return -2; }
 
-/*
+*//*
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
 biblioteca, hay libros, y cada libro tiene un autor. Queremos organizar esta
