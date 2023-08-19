@@ -1180,3 +1180,17 @@ exercises.c:105:5: error: ‘AscOrDes’ may be used uninitialized in this funct
 cc1: all warnings being treated as errors
 Compilation failed
 958b1bb
+Sat 19 Aug 2023 01:02:21 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:131:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  131 |   if (AscOrDes = -1)
+      |       ^~~~~~~~
+exercises.c:105:7: error: ‘AscOrDes’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  105 |   int AscOrDes;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cc63547
