@@ -1345,3 +1345,15 @@ exercises.c:104:5: error: ‘checkSorted’ defined but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 50d12a9
+Sat 19 Aug 2023 03:34:41 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c:126:5: error: redefinition of ‘checkSorted’
+  126 | int checkSorted(int arr[], int size) {
+      |     ^~~~~~~~~~~
+exercises.c:103:5: note: previous definition of ‘checkSorted’ with type ‘int(int *, int)’
+  103 | int checkSorted(int arr[], int size) {
+      |     ^~~~~~~~~~~
+Compilation failed
+ea60262
