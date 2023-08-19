@@ -1436,3 +1436,9 @@ exercises.c:148:3: error: implicit declaration of function ‘strcp’; did you 
 cc1: all warnings being treated as errors
 Compilation failed
 6003145
+Sat 19 Aug 2023 03:48:10 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+49d3111
