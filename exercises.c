@@ -168,5 +168,30 @@ typedef struct nodo {
   int numero;
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
+Nodo *crearListaEnlazada(int arr[], int size) { if (size == 0) {
+        return NULL; // Lista vacía si el tamaño es cero
+    }
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+    Nodo *head = malloc(sizeof(Nodo)); // Crear el primer nodo
+    if (head == NULL) {
+        perror("Error al asignar memoria");
+        exit(EXIT_FAILURE);
+    }
+    head->numero = arr[0];
+    head->siguiente = NULL;
+
+    Nodo *current = head;
+    for (int i = 1; i < size; i++) {
+        current->siguiente = malloc(sizeof(Nodo)); // Crear un nuevo nodo
+        if (current->siguiente == NULL) {
+            perror("Error al asignar memoria");
+            exit(EXIT_FAILURE);
+        }
+        current = current->siguiente;
+        current->numero = arr[i];
+        current->siguiente = NULL;
+    }
+
+    return head;
+}
+
