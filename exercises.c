@@ -116,10 +116,10 @@ int checkSorted(int arr[], int size) {
     }
 
     if (flag == 1) {
-        return -1;
+        return 1;
     }
     if (flag == -1) {
-        return 1;
+        return -1;
     }
     else
     {
