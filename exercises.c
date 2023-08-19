@@ -74,25 +74,18 @@ arreglos en un tercer arreglo también ordenado.
 
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
 
-
-  int size3;
-  size3 = size1 + size2;
-  int arr3[size3];
-  for (int i = 0; i < size1; i++)
-    {
-      arr3[i] = arr1[i];
-      for (int j = 0; j < size2; j++)
-        {
-          arr3[i] = arr1[j];
-          
-        }
-      printf("%d ", arr3[i]);
+    int size3 = size1 + size2;
+    
+    int k = 0;
+    for (int i = 0; i < size1; i++) {
+        result[k++] = arr1[i];
     }
-  result[size3] = arr3[size3];
-  
-
-  
+    
+    for (int j = 0; j < size2; j++) {
+        result[k++] = arr2[j];
+    }
 }
+
 
 /*
 Ejercicio 5: Comprobación de Ordenación
