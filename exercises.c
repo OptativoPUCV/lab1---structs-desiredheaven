@@ -105,23 +105,18 @@ int checkSorted(int arr[], int size) {
 
     for (int i = 0; i < size - 1; i++) 
     {
-        if (arr[i] < arr[i + 1]) 
-        {
-            flag = 1;
-        }
-        else
-        {
-        flag = 0;
-        }
-        if (arr[i] > arr[i + 1]) 
-        {
-            flag = -1;
-        }
-        else
-        {
-          flag = 0;
-        }
-        
+      if (arr[i] < arr[i + 1]) 
+      {
+        flag = 1;
+      }
+    }
+    for (int i = 0; i < size - 1; i++) 
+    {
+      if (arr[i] > arr[i + 1]) 
+      {
+        flag = -1;
+      }
+            
     }
 
     if (flag == 1) {
