@@ -1357,3 +1357,9 @@ exercises.c:103:5: note: previous definition of ‘checkSorted’ with type ‘i
       |     ^~~~~~~~~~~
 Compilation failed
 ea60262
+Sat 19 Aug 2023 03:35:13 AM UTC: 
+ exercises.c | 23 -----------------------
+ 1 file changed, 23 deletions(-)
+ tests:  0|4
+total_score: 30/70
+0aeb433

@@ -123,29 +123,6 @@ int checkSorted(int arr[], int size) {
     
     return 0;
 }
-int checkSorted(int arr[], int size) {
-    int flag = 0;
-
-    for (int i = 0; i < size - 1; i++) {
-        if (arr[i] > arr[i + 1]) {
-            flag = 1;
-            break;
-        }
-        if (arr[i] < arr[i + 1]) {
-            flag = -1;
-            break;
-        }
-    }
-
-    if (flag == 1) {
-        return -1;
-    }
-    if (flag == -1) {
-        return 1;
-    }
-    
-    return 0;
-}
 
 
 /*
