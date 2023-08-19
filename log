@@ -1459,3 +1459,18 @@ Sat 19 Aug 2023 03:53:30 AM UTC:
  tests:  0|2
 total_score: 50/70
 a676275
+Sat 19 Aug 2023 03:56:50 AM UTC: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:1:
+exercises.c:87:5: error: expected identifier or ‘(’ before ‘for’
+   87 |     for (int i = 1; i < size1 + size2; i++) {
+      |     ^~~
+exercises.c:87:23: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   87 |     for (int i = 1; i < size1 + size2; i++) {
+      |                       ^
+exercises.c:87:41: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   87 |     for (int i = 1; i < size1 + size2; i++) {
+      |                                         ^~
+Compilation failed
+3c442ca
