@@ -1146,3 +1146,23 @@ test.c:258:18: error: implicit declaration of function ‘checkSorted’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 9b54201
+Sat 19 Aug 2023 12:59:49 AM UTC: 
+ exercises.c | 39 ++++++++++++++++++++++++++++++++-------
+ 1 file changed, 32 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:109:28: error: expected ‘)’ before ‘{’ token
+  109 |         if (arr[i]<arr[i+1]
+      |            ~               ^
+      |                            )
+  110 |         {
+      |         ~                   
+exercises.c:121:7: error: expected expression before ‘}’ token
+  121 |       }
+      |       ^
+exercises.c:131:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  131 |   if (AscOrDes = -1)
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b990a31
