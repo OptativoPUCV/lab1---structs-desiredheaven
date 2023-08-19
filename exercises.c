@@ -107,17 +107,29 @@ int checkSorted(int arr[], int size) {
       {
         if (arr[i]>arr[i+1])
         {
-          return -1;
+          flag = 1;
         }
         if (arr[i]<arr[i+1])
         {
-          return 1;
+          flag = -1;
         }
         else
         {
-          return 0;
+          flag = 0;
         }
       }
+  if (flag = 1)
+  {
+    return 1;
+  }
+  if (flag = -1)
+  {
+    return -1;
+  }
+  else
+  {
+    return 0;
+  }
 }
 
 /*
