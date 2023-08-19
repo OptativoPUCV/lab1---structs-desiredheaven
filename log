@@ -1387,3 +1387,16 @@ Sat 19 Aug 2023 03:37:40 AM UTC:
  tests:  0|4
 total_score: 30/70
 a1e9835
+Sat 19 Aug 2023 03:39:08 AM UTC: 
+ exercises.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:114:17: error: expected ‘;’ before ‘}’ token
+  114 |         flag = 0
+      |                 ^
+      |                 ;
+  115 |         }
+      |         ~        
+Compilation failed
+7a0a454
