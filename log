@@ -1194,3 +1194,14 @@ exercises.c:105:7: error: ‘AscOrDes’ may be used uninitialized in this funct
 cc1: all warnings being treated as errors
 Compilation failed
 cc63547
+Sat 19 Aug 2023 01:03:18 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:105:7: error: ‘AscOrDes’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  105 |   int AscOrDes;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3293fbc

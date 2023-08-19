@@ -120,15 +120,15 @@ int checkSorted(int arr[], int size)
         }
       }
 
-  if (AscOrDes == 1)
+  if ((AscOrDes == 1))
   {
     return 1;
   }
-  if (AscOrDes == 0)
+  if ((AscOrDes == 0))
   {
     return 0;
   }
-  if (AscOrDes = -1)
+  if ((AscOrDes = -1))
   {
     return -1;
   }
