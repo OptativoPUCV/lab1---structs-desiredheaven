@@ -1298,3 +1298,9 @@ exercises.c:105:7: error: ‘flag’ may be used uninitialized in this function 
 cc1: all warnings being treated as errors
 Compilation failed
 0036963
+Sat 19 Aug 2023 03:31:30 AM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  0|4
+total_score: 30/70
+df59d4a
