@@ -100,36 +100,28 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int flag;
 int checkSorted(int arr[], int size) {
-    for (int i = 0; i < size-1; i++)
-      {
-        if (arr[i]>arr[i+1])
-        {
-          flag = 1;
+    int flag = 0;
+
+    for (int i = 0; i < size - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            flag = 1;
         }
-        if (arr[i]<arr[i+1])
-        {
-          flag = -1;
+        if (arr[i] < arr[i + 1]) {
+            flag = -1;
         }
-        else
-        {
-          flag = 0;
-        }
-      }
-  if ((flag == 1))
-  {
-    return 1;
-  }
-  if ((flag == -1))
-  {
-    return -1;
-  }
-  else
-  {
-    return 0;
-  }
+    }
+
+    if (flag == 1) {
+        return 1;
+    }
+    if (flag == -1) {
+        return -1;
+    } else {
+        return 0;
+    }
 }
+
 
 /*
 Ejercicio 6: Información de una Biblioteca
